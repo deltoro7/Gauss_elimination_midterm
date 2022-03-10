@@ -9,6 +9,12 @@ A = first_A.astype(np.float)
 
 rows = len(A)
 cols = len(A[0])
+#Error computation
+for k in range(0,cols):
+    if len(A[k]) != cols:
+        print("Error: number missing data value: ")
+        break
+
 
 for k in range(0,rows - 1): #Current row used (k)
     print("A=",A)
